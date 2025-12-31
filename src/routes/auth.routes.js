@@ -1,5 +1,15 @@
 import express from "express";
-import { register, login } from "../controllers/auth.controller.js";
+import {
+  sendOTPHandler,
+  verifyOTPHandler,
+  signup,
+  googleAuth,
+  refreshTokenHandler,
+  logout,
+  getCurrentUser
+} from "../controllers/auth.controller.js";
+
+
 
 const router = express.Router();
 
